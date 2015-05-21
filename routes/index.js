@@ -101,7 +101,7 @@ router.get('/rotation/:sequence?/:total?', function(req, res) {
 	 */
   nextContact = sequence;
   nextContact++;
-  if( nextContact > numberList.length ) {
+  if( nextContact >= numberList.length ) {
     nextContact = 0;
   }
 
