@@ -14,3 +14,5 @@ TWILIO_NUMBER=555-123-4567
 Configure Twilio to send voice calls to the following endpoint:
 
 `http://your-app-name.herokuapp.com/rotation`
+
+Set the method in Twilio to `GET` for the app to work (default is `POST`).

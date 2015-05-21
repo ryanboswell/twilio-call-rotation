@@ -38,7 +38,8 @@ router.get('/whisper/:total?', function(req, res) {
   // Confirm with our contact they want to answer before connecting
   twiml.gather({
     numDigits: '1',
-    action: '/connect'
+    action: '/connect',
+    method: 'GET'
   }, function() {
 
     this.say( 'This your friendly neighborhood call rotation system.' )
@@ -121,7 +122,8 @@ router.get('/rotation/:sequence?/:total?', function(req, res) {
   }, function() {
 
     this.number({
-      url: '/whisper/'+ (total) +'/'
+      url: '/whisper/'+ (total) +'/',
+      method: 'GET'
     }, numberList[sequence] );
 
   });
