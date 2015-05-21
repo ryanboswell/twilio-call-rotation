@@ -1,0 +1,20 @@
+{
+  "name": "node-call-rotation",
+  "version": "0.1.0",
+  "description": "A simple NodeJS based call rotation.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x",
+    "twilio": "2.2.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanboswell/node-call-rotation"
+  }
+}
